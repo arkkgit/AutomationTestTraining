@@ -47,6 +47,9 @@
     <Compile Include="Basics\E02_Contional Statements.cs" />
     <Compile Include="Basics\E03_Loops.cs" />
     <Compile Include="Basics\E04_Collections.cs" />
+    <Compile Include="Oops\E01_Class\Person.cs" />
+    <Compile Include="Oops\E02_Methods\Car.cs" />
+    <Compile Include="Oops\E03_Constructors\Bike.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

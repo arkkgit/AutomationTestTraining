@@ -45,6 +45,7 @@ namespace AutomationTestTraining.Basics
             ShoppingList.Add("Eggs");
             ShoppingList.Add("Bread"); // Lists can hold duplicates
 
+
             Console.WriteLine("Item at index 0 is :"+ ShoppingList[3]);
 
             foreach (var item in ShoppingList)
