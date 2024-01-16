@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8595D6CA-7898-4027-9060-629326215CE6}</ProjectGuid>
+    <ProjectGuid>{981DEE95-B417-4CB0-B00D-32B48B6CBB71}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AutomationTestTraining</RootNamespace>
-    <AssemblyName>AutomationTestTraining</AssemblyName>
+    <RootNamespace>AnotherAssembly</RootNamespace>
+    <AssemblyName>AnotherAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,27 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Basics\E01_Variables.cs" />
-    <Compile Include="Basics\E02_Contional Statements.cs" />
-    <Compile Include="Basics\E03_Loops.cs" />
-    <Compile Include="Basics\E04_Collections.cs" />
-    <Compile Include="Oops\E01_Class\Person.cs" />
-    <Compile Include="Oops\E02_Methods\Car.cs" />
-    <Compile Include="Oops\E03_Constructors\Bike.cs" />
-    <Compile Include="Oops\E04_OverLoading\MyCalculator.cs" />
-    <Compile Include="Oops\E05_Inheritance\A.cs" />
-    <Compile Include="Oops\E05_Inheritance\B.cs" />
-    <Compile Include="Oops\E05_Inheritance\C.cs" />
-    <Compile Include="Oops\E06_NameSpace\Casio\Calc.cs" />
-    <Compile Include="Oops\E06_NameSpace\Sharp\Calc.cs" />
-    <Compile Include="Oops\E07_AccessModifiers\AMAnother.cs" />
-    <Compile Include="Oops\E07_AccessModifiers\AMChild.cs" />
-    <Compile Include="Oops\E07_AccessModifiers\AMDemo.cs" />
+    <Compile Include="AMChild.cs" />
+    <Compile Include="AMOther.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomationTestTraining\AutomationTestTraining.csproj">
+      <Project>{8595D6CA-7898-4027-9060-629326215CE6}</Project>
+      <Name>AutomationTestTraining</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

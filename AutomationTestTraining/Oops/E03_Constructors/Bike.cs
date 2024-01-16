@@ -15,10 +15,18 @@ namespace AutomationTestTraining.Oops.E03_Constructors
             Console.WriteLine( "Default contsructor is exposed");
         }
        
-        public Bike(string xcolor)
+        public Bike(string xcolor)  // Constructor Overloading
         {
             color = xcolor;
             //Deafult behaviour
+            if(xcolor == "Red")
+            {
+                Console.WriteLine($"Apply Some discount!! for {xcolor} Bike");
+            }
+            else
+            {
+                Console.WriteLine("Sorry No discount!! for  {xcolor} Bike ");
+            }
         }
 
         public void GetColor()
