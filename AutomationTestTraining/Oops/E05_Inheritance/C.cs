@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomationTestTraining.Oops.E05_Inheritance
 {
-    public class C :B
+     public class C :B
     {
     }
 }

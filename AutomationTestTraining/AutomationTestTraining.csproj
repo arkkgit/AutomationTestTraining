@@ -59,6 +59,8 @@
     <Compile Include="Oops\E07_AccessModifiers\AMAnother.cs" />
     <Compile Include="Oops\E07_AccessModifiers\AMChild.cs" />
     <Compile Include="Oops\E07_AccessModifiers\AMDemo.cs" />
+    <Compile Include="Oops\E08_Static\StaticDemo.cs" />
+    <Compile Include="Oops\E09_Exceptions\ExceptionsDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

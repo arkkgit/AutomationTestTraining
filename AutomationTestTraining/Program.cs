@@ -5,6 +5,8 @@ using AutomationTestTraining.Oops.E03_Constructors;
 using AutomationTestTraining.Oops.E04_OverLoading;
 using AutomationTestTraining.Oops.E05_Inheritance;
 using AutomationTestTraining.Oops.E06_NameSpace.Sharp;
+using AutomationTestTraining.Oops.E08_Static;
+using AutomationTestTraining.Oops.E09_Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,39 +69,46 @@ namespace AutomationTestTraining
 
             //Inheritance
 
-/*            A a = new A();
-            Console.WriteLine("The First name is " + a.FirstName);
-            Console.WriteLine("The surname is "+a.LastName);
-            a.Work();
-            a.Hobbies();
+            /*            A a = new A();
+                        Console.WriteLine("The First name is " + a.FirstName);
+                        Console.WriteLine("The surname is "+a.LastName);
+                        a.Work();
+                        a.Hobbies();
 
-            Console.WriteLine("********Attributes and actions of B*****");
-            B b = new B();
-            Console.WriteLine("The First name is " + b.FirstName);
-            Console.WriteLine("The surname is " + b.LastName);
-            b.Work();
-            b.Hobbies();
-            b.Walk();
+                        Console.WriteLine("********Attributes and actions of B*****");
+                        B b = new B();
+                        Console.WriteLine("The First name is " + b.FirstName);
+                        Console.WriteLine("The surname is " + b.LastName);
+                        b.Work();
+                        b.Hobbies();
+                        b.Walk();
 
-            Console.WriteLine("******Attributes of C *******");
-            C c = new C();
-            c.Work();
-            c.Hobbies();
-            // object is a superclass by default for all classes.
-*/
+                        Console.WriteLine("******Attributes of C *******");
+                        C c = new C();
+                        c.Work();
+                        c.Hobbies();
+                        // object is a superclass by default for all classes.
+            */
 
 
             //namespace and using
-/*            Calc c1 = new Calc();
-            c1.add();
-            
-            // In case if you want to use both.
-            AutomationTestTraining.Oops.E06_NameSpace.Casio.Calc c2 = new AutomationTestTraining.Oops.E06_NameSpace.Casio.Calc();
-            c2.add();*/
+            /*            Calc c1 = new Calc();
+                        c1.add();
+
+                        // In case if you want to use both.
+                        AutomationTestTraining.Oops.E06_NameSpace.Casio.Calc c2 = new AutomationTestTraining.Oops.E06_NameSpace.Casio.Calc();
+                        c2.add();*/
+
+            // Static Modifier
+
+            /* StaticDemo.StatMethod(); // static methods and members can be accessed with out object
+             Console.WriteLine("accessing stat var "+StaticDemo.i);
+             StaticDemo myStat = new StaticDemo();
+             Console.WriteLine("var j is : "+myStat.j);
+             myStat.NonStatMethod();*/
 
 
-
-
+            ExceptionsDemo.exceptionDemo();
         }
 
     }
