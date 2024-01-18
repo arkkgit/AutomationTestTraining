@@ -7,8 +7,13 @@ using AutomationTestTraining.Oops.E05_Inheritance;
 using AutomationTestTraining.Oops.E06_NameSpace.Sharp;
 using AutomationTestTraining.Oops.E08_Static;
 using AutomationTestTraining.Oops.E09_Exceptions;
+using AutomationTestTraining.Oops.E10_Abstract;
+using AutomationTestTraining.Oops.E11_Interface;
+using AutomationTestTraining.Oops.E12_DataEncapsulation;
+using AutomationTestTraining.Oops.Utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,7 +76,7 @@ namespace AutomationTestTraining
 
             /*            A a = new A();
                         Console.WriteLine("The First name is " + a.FirstName);
-                        Console.WriteLine("The surname is "+a.LastName);
+                        Console.WriteLine("The surname is " + a.LastName);
                         a.Work();
                         a.Hobbies();
 
@@ -88,6 +93,9 @@ namespace AutomationTestTraining
                         c.Work();
                         c.Hobbies();
                         // object is a superclass by default for all classes.
+
+                        // demo of this and base
+                        b.DemoOFThisandBase();
             */
 
 
@@ -107,8 +115,84 @@ namespace AutomationTestTraining
              Console.WriteLine("var j is : "+myStat.j);
              myStat.NonStatMethod();*/
 
+            //Exceptions
 
-            ExceptionsDemo.exceptionDemo();
+            //ExceptionsDemo.exceptionDemo();
+
+
+            //Abstraction
+            /*           //Shape shape = new Shape(); // you cannot create an instance of abstract.
+                       Triangle myTriangle = new Triangle();
+                       myTriangle.GetArea();
+                       new Rectangle().GetArea(); // short for an instance.
+
+                       myTriangle.NormalMethod();
+                       Console.WriteLine("The var from abstract classs is "+myTriangle.i);*/
+
+
+            //Interfaces
+            /*            //IBird bird = new IBird();  // cannot instantiate an interface.
+
+                        Pegion myPegion = new Pegion();
+                        myPegion.Fly();
+                        myPegion.Eat();
+                        myPegion.PegionSpecific();
+
+                        Parrot myBird1 = new Parrot();
+                        IBird  myBird2 = new Parrot();
+                        IJungle myBird3 = new Parrot();
+
+                        //myBird3. // try to see which methods from which interface are available for
+                        // myBird 1,2,3.
+
+                       // A abcd = new B(); // upcasting - implicit casting
+            */
+
+            //Data Encapsulation
+
+            /*        DataEncapsulation d = new DataEncapsulation();
+                    d.setUsername("admin");
+                    var u = d.getUsername();
+                    Console.WriteLine("The username is :"+u);
+
+                    d.town = "Bristol";
+                    Console.WriteLine("Town is : "+d.town);
+
+                    d.setPassword("secret");
+                    //Console.WriteLine("The password is "+d.getPassword());
+
+                    Property p = new Property();
+                    p.Age = 24;
+                    Console.WriteLine("The age is "+p.Age);
+                    p.Username = "abdul";
+                    Console.WriteLine("getting the user name "+p.Username);*/
+
+            // Utils
+
+            string s1 = "I am pro in C# now";
+            var replacedString = s1.Replace("pro", "Ninja");
+            Console.WriteLine("Repalced example : "+ replacedString);
+            bool containYN = s1.Contains("pro");
+            Console.WriteLine(containYN);
+            var upperString=  s1.ToUpper();
+            Console.WriteLine(upperString);
+            string[] splittedExample = s1.Split(' ');
+            
+            foreach(string example in splittedExample)
+            {
+                Console.WriteLine(example);
+            }
+
+            //Please reverse the string s1 by Google or Chatgpt or any other means and print it.
+            Console.WriteLine(Utils.Reverse(s1));
+
+            //Read file from desktop which is abc.txt and print the contents.
+            var c= File.ReadAllLines("C:\\Users\\rahee\\OneDrive\\Desktop\\abcd.txt");
+           // Console.WriteLine(c);
+            foreach (var item in c)
+            {
+                Console.WriteLine(item);
+            }
         }
 
     }

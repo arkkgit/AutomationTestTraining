@@ -22,5 +22,13 @@ namespace AutomationTestTraining.Oops.E05_Inheritance
         {
             Console.WriteLine("This is how B walks ....");
         }
+
+        public void DemoOFThisandBase()
+        {
+            Console.WriteLine(this.FirstName);
+            Console.WriteLine(base.FirstName);
+            this.Work();
+            base.Work();
+        }
     }
 }

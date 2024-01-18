@@ -61,11 +61,24 @@
     <Compile Include="Oops\E07_AccessModifiers\AMDemo.cs" />
     <Compile Include="Oops\E08_Static\StaticDemo.cs" />
     <Compile Include="Oops\E09_Exceptions\ExceptionsDemo.cs" />
+    <Compile Include="Oops\E10_Abstract\Rectangle.cs" />
+    <Compile Include="Oops\E10_Abstract\Shape.cs" />
+    <Compile Include="Oops\E10_Abstract\Triangle.cs" />
+    <Compile Include="Oops\E11_Interface\IBird.cs" />
+    <Compile Include="Oops\E11_Interface\IJungle.cs" />
+    <Compile Include="Oops\E11_Interface\Parrot.cs" />
+    <Compile Include="Oops\E11_Interface\Pegion.cs" />
+    <Compile Include="Oops\E12_DataEncapsulation\DataEncapsulation.cs" />
+    <Compile Include="Oops\E12_DataEncapsulation\Property.cs" />
+    <Compile Include="Oops\Utils\Utils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\USerData.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
