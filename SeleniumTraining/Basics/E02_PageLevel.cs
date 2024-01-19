@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using NUnit.Framework.Legacy;
 using OpenQA.Selenium.Support.UI;
+using System.Collections.ObjectModel;
 
 namespace SeleniumTraining.Basics
 {
@@ -44,6 +45,30 @@ namespace SeleniumTraining.Basics
             var CatSelect = driver.FindElement(By.Name("categoryListboxContactUs"));
             SelectElement CatDropDown = new SelectElement(CatSelect);
             CatDropDown.SelectByText("Tablets");
+            driver.FindElement(By.CssSelector("textarea[name*='subject']")).SendKeys("I am pro in css selector");
+           
+
+        }
+
+
+        [Test]
+        public void FindPopularItems()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "https://www.advantageonlineshopping.com";
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Thread.Sleep(7000);
+            //ReadOnlyCollection<IWebElement> popularItems = driver.FindElements(By.XPath("//article[@id='popular_items']//p"));
+            // for education purpose - to demonstrate the output data type.
+            var popularItems = driver.FindElements(By.XPath("//article[@id='popular_items']//p"));
+
+            Console.WriteLine(popularItems.Count);
+
+            foreach (var popularItem in popularItems)
+            {
+                Console.WriteLine(popularItem.Text);
+            }
 
         }
 

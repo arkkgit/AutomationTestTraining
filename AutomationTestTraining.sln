@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherAssembly", "AnotherA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTraining", "SeleniumTraining\SeleniumTraining.csproj", "{BD5C5260-D74A-41E0-BCB6-174303581418}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceMaterials", "ReferenceMaterials", "{53D8F607-A463-4693-9ADF-349B9C87A32D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

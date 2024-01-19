@@ -68,6 +68,9 @@
   <ItemGroup>
     <Compile Include="Basics\E01_BrowserWindow.cs" />
     <Compile Include="Basics\E02_PageLevel.cs" />
+    <Compile Include="Basics\E03_Actions.cs" />
+    <Compile Include="Basics\E04_SwitchTo.cs" />
+    <Compile Include="Basics\E05_Challenges.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
