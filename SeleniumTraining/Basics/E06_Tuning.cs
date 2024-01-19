@@ -23,7 +23,7 @@ namespace SeleniumTraining.Basics
             driver.Url = "https://the-internet.herokuapp.com/dynamic_loading/2";
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(11); // 2. Implicit wait
-            //works with FindElement and FindElements if they are NOT present in the DOM
+            //works with FindElement() and FindElements() if they are NOT present in the DOM
             driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
 
             driver.FindElement(By.XPath("//button")).Click();

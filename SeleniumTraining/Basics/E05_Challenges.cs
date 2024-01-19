@@ -13,7 +13,7 @@ namespace SeleniumTraining.Basics
     {
 
         [Test]
-        public void WindowsDemo()
+        public void uploadFile()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "https://the-internet.herokuapp.com/upload";
@@ -25,5 +25,30 @@ namespace SeleniumTraining.Basics
 
         }
 
-       }
+        [Test]
+        public void downloadFile()
+        {
+
+
+
+
+            ChromeOptions options = new ChromeOptions();
+            options.AddUserProfilePreference("download.prompt_for_download", false);
+            options.AddUserProfilePreference("download.default_directory", "D:\\Temp\\");
+
+            IWebDriver driver = new ChromeDriver(options);
+            driver.Url = "https://the-internet.herokuapp.com/download";
+            driver.FindElement(By.LinkText("some-file.txt")).Click();
+
+        }
+
+
+        [Test]
+        public void BasicAuth()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "https://admin:admin@the-internet.herokuapp.com/basic_auth";
+        }
+
+    }
 }
