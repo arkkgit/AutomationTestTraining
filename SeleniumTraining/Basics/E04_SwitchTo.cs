@@ -66,6 +66,8 @@ namespace SeleniumTraining.Basics
             driver.SwitchTo().Window(OriginalWindow);
             driver.Url = "https://abrakh.com";
 
+            driver.Quit();
+
 
 
         }
