@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTraining", "Seleniu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceMaterials", "ReferenceMaterials", "{53D8F607-A463-4693-9ADF-349B9C87A32D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowTraining", "SpecFlowTraining\SpecFlowTraining.csproj", "{E6705FCA-B633-4050-866E-DAE0B6FA02CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{BD5C5260-D74A-41E0-BCB6-174303581418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD5C5260-D74A-41E0-BCB6-174303581418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD5C5260-D74A-41E0-BCB6-174303581418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6705FCA-B633-4050-866E-DAE0B6FA02CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6705FCA-B633-4050-866E-DAE0B6FA02CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6705FCA-B633-4050-866E-DAE0B6FA02CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6705FCA-B633-4050-866E-DAE0B6FA02CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

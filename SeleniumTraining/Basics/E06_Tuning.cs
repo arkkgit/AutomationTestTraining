@@ -54,7 +54,7 @@ namespace SeleniumTraining.Basics
             
             // Selenium 3 way with Excpected conditions.
             //Need to install nuget package - dotnetExtra selenium wait helpers
-           // wait.Until(ExpectedConditions.ElementIsVisible(By.Id("finish")));
+          //wait.Until(ExpectedConditions.ElementIsVisible(By.Id("finish")));
 
 
             //Selenium 4 onwards

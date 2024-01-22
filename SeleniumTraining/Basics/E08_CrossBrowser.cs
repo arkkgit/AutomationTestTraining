@@ -26,7 +26,8 @@ namespace SeleniumTraining.Basics
             op.AddArgument("--headless");
 
 
-           /* options.AddArgument("--headless");
+           /* Chrome Options
+            * options.AddArgument("--headless");
             options.AddArgument("--start-maximized");
             options.AddArguments("--window-size=1920,1080");
             options.AddArgument("--ignore-certificate-errors");
