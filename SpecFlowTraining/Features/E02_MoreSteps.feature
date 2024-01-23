@@ -5,7 +5,7 @@ As a student
 I want to learn different step definitions
 # This is a comment.
 
-@tag1
+@regression @sprint5 @functionality @clement @defect567
 Scenario: More on Steps and ste definitions
 	Given the user is on homepage
 	Given the user is on home page

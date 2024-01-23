@@ -76,11 +76,19 @@ namespace SpecFlowTraining.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("More on Steps and ste definitions")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
+        [NUnit.Framework.CategoryAttribute("regression")]
+        [NUnit.Framework.CategoryAttribute("sprint5")]
+        [NUnit.Framework.CategoryAttribute("functionality")]
+        [NUnit.Framework.CategoryAttribute("clement")]
+        [NUnit.Framework.CategoryAttribute("defect567")]
         public void MoreOnStepsAndSteDefinitions()
         {
             string[] tagsOfScenario = new string[] {
-                    "tag1"};
+                    "regression",
+                    "sprint5",
+                    "functionality",
+                    "clement",
+                    "defect567"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("More on Steps and ste definitions", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 9

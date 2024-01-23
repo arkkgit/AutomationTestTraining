@@ -73,14 +73,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parallel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\E01_StepDefinitions.cs" />
     <Compile Include="StepDefinitions\E02_MoreStepDefs.cs" />
+    <Compile Include="StepDefinitions\E03_BackgroundStepDef.cs" />
+    <Compile Include="StepDefinitions\E04_DataDrivenStepDefs.cs" />
+    <Compile Include="StepDefinitions\E05_ShareStateContextInjection\ShareStateObjects.cs" />
+    <Compile Include="StepDefinitions\E05_ShareStateContextInjection\SS1_CI.cs" />
+    <Compile Include="StepDefinitions\E05_ShareStateContextInjection\SS2_CI.cs" />
+    <Compile Include="StepDefinitions\E05_ShareStateContextInjection\SS3_CI.cs" />
+    <Compile Include="StepDefinitions\E05_SSAllSteps.cs" />
+    <Compile Include="StepDefinitions\E05_StaticSolution\SS1.cs" />
+    <Compile Include="StepDefinitions\E05_StaticSolution\SS2.cs" />
+    <Compile Include="StepDefinitions\E05_StaticSolution\SS3.cs" />
+    <Compile Include="StepDefinitions\E07_DataHooks.cs" />
+    <Compile Include="StepDefinitions\E08_Parallel.cs" />
+    <Compile Include="StepDefinitions\Hooks\E06_Hooks.cs" />
+    <Compile Include="StepDefinitions\Hooks\E07_DataHooks.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="Features\E01_First.feature" />
     <None Include="Features\E02_MoreSteps.feature" />
+    <None Include="Features\E03_Background.feature" />
+    <None Include="Features\E04_DataDriven.feature" />
+    <None Include="Features\E05_ShareStateDemo.feature" />
+    <None Include="Features\E06_HooksPS.feature" />
+    <None Include="Features\E07_DataHooks.feature" />
+    <None Include="Features\E08_ParallelDemo.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
