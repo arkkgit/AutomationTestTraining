@@ -47,7 +47,7 @@ namespace SpecFlowTraining.StepDefinitions
         // (\d) is for single digit
         // (\d+) is for multiple digits.
 
-        [Given(@"the user adds (\d+) tablets to the cart\.")]
+        [Given(@"the user adds (\d+) tablets to the cart")]
         public void GivenTheUserAddsTabletsToTheCart_(int noOfItems)
         {
             Console.WriteLine( "Items added are "+ noOfItems);
@@ -78,8 +78,15 @@ namespace SpecFlowTraining.StepDefinitions
         [Given(@"abcd adds (.*) tablets? to the basket")]
         public void GivenAbcdAddsTabletsToTheBasket(int p0)
         {
-            throw new PendingStepException();
+            Console.WriteLine("abcd added tablets "+p0);
         }
+
+        [Given(@"xyz adds (.*) tablets? to the basket")]
+        public void GivenXyzAddsTabletsToTheBasket(int p0)
+        {
+            Console.WriteLine( "optional text statement : "+ p0);
+        }
+
 
 
 

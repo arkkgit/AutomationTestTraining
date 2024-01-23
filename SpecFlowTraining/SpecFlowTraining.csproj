@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\E01_StepDefinitions.cs" />
+    <Compile Include="StepDefinitions\E02_MoreStepDefs.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
